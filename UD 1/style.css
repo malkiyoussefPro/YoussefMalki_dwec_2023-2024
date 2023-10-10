@@ -1,0 +1,27 @@
+* {
+    background-color: rgb(250, 159, 126);
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 50px;
+    color: rgb(112, 12, 97);
+    text-align: center;
+}
+p{
+    margin-left: 20px;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: left;
+}
+img{
+    margin: auto;
+}
+hr{
+    color: brown;
+    border-color: blueviolet;
+}
+button{
+    color: brown;
+    background-color: white;
+    font-size: 15px;
+}

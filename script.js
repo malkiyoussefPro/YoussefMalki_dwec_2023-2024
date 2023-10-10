@@ -1,0 +1,1 @@
+console.log("vengo de un fichero");
