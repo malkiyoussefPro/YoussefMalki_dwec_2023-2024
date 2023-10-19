@@ -1,24 +1,55 @@
-let fechaNeptuno = new Date("09/23/1846");
-let fechaJupiter = new Date("03/02/1543");
-let fechaMercurio = new Date("04/03/1543");
-let fechaMarte = new Date("05/21/1543");
-let fechaSaturno = new Date("01/22/1543");
-
-let jupiter  = [5.20, -1.120, fechaJupiter];
-let mercurio = [0.39, -38, fechaMercurio];
-let neptuno  = [30.06,-388, fechaNeptuno];
-let marte    = [1.52, -53, fechaMarte]; 
-let saturno  = [9.54, -945,fechaSaturno]; 
 
 
-let planetas = {
 
-    jupiter,
-    mercurio,
-    neptuno,
-    marte,
-    saturno,
+//let planet =["Júpiter", "mercurio", "neptuno", "marte", "saturno"];
+
+let planetas = [
+    {
+        nombre: "Júpiter",
+        distancia_solar: 0.39,
+        tamaño_relativo: -38,
+        fecha:"03/02/1543",  
+    },
+
+    {
+        nombre: "mercurio",
+        distancia_solar: 5.20,
+        tamaño_relativo: -1.120,
+        fecha:"04/03/1543",
+    
+    },
+
+    {
+        nombre: "neptuno",
+        distancia_solar: 30.06,
+        tamaño_relativo: -388,
+        fecha:"09/23/1846",
+    },
+    {
+        nombre:  "marte",
+        distancia_solar: 1.52,
+        tamaño_relativo: -53,
+        fecha:"05/21/1543",   
+    },
+    {
+        nombre: "saturno",
+        distancia_solar: 9.54,
+        tamaño_relativo: -945,
+        fecha:"01/22/1543",
+        
+        
+    }
+
+]
+
+function imprimir(planetas){
+    
+    console.log("- La distancia solar entre la tierra y ",planetas.nombre," es: ",planetas.distancia_solar,
+                "  el tamaño relativo entre la tierra y ",planetas.nombre," es: ",planetas.tamaño_relativo,
+                "  la fecha del descubrimiento de  ",planetas.nombre," es: ",planetas.fecha);
 }
 
-console.log(planetas.jupiter[2]);
 
+for(let planeta of planetas){
+    imprimir(planeta);
+}
